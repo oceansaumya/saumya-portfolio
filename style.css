@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #210706;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.page1,
+.page2,
+.page3,
+.page4 {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.page1,
+.page3 {
+    background-color: #210706;
+}
+
+.page2,
+.page4 {
+    background-color: #F1E6D2;
+
+}
+
+.nav-bar {
+    background-color: #F1E6D2;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo {
+    position: sticky;
+}
+
+.logo a {
+    font-size: 24px;
+    font-family: "Galada", serif;
+    color: #891D1A;
+}
+.decor{
+    position: absolute;
+    top: -10px;
+    left: 40px;
+}
+#circle1,
+#circle2,
+#circle3,
+#circle4,
+#circle5,
+#circle6,
+#circle7,
+#circle8,
+#circle9,
+#circle10,
+#circle11,
+#circle12,
+#circle13,
+#circle14,
+#circle15,
+#circle16,
+#circle17,
+#circle18,
+#circle19,
+#circle20 {
+    background-color: #F1E6D2;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    z-index: 0;
+}
+
+.centre-name {
+    color: #F1E6D2;
+    font-size: 4em; /*63px*/
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 40px;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    transition: font-size 0.8s ease;
+}
+
+.centre-name:hover {
+    font-size: 72px;
+    font-family: "Prata", serif;
+    font-variant-caps: petite-caps;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.container div {
+    width: 6px;
+    height: 660px;
+    background-color: #F1E6D2;
+    opacity: 0.2;
+    z-index: 5;
+    transform-origin: bottom;
+}
+
+.about {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #e5d4d3;
+    font-size: 1.2rem; /*20px*/
+
+}
+
+
+.about h3 {
+    text-align: left;
+    padding-top: 100px;
+    color: #210706;
+    font-size: 3em; /*100px*/
+}
+
+.about h5 {
+    font-size: 2em; /*30px*/
+    text-align: left;
+    color: #891D1A;
+    margin-left: 10px;
+}
+
+.about p {
+    color: #210706;
+}
+
+
+
+.about h3 {
+    text-align: left;
+    color: #210706;
+    font-size: 85px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    animation: fadeInDown 1s ease-out;
+    margin-bottom: 20px;
+}
+
+.about h5 {
+    font-size: 40px;
+    text-align: left;
+    color: #891D1A;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.about p {
+    color: #210706;
+    font-size: 22px;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+
+}
+.highlight {
+    transition: color 0.3s ease, background-color 0.3s ease; 
+    display: inline-block;
+    padding: 2px;
+}
+
+.highlight:hover {
+    font-size: 1.2em;
+}
+#projects {
+    max-width: 800px;
+    margin: 300px auto;
+    padding: 20px;
+    background: #F1E6D2;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.project {
+    margin: 50px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #891D1A;
+    transition: transform 0.3s ease;
+}
+
+.project img {
+    width: 80px;
+    height: 80px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin: 10px 0;
+}
+#proj {
+    font-size: 30px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.project a {
+    display: inline-block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #e5d4d3;
+}
+
+.project:hover {
+    background-color: #210706;
+    color: #891D1A;
+    transform: scale(1.05);
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.page4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.contact-page p {
+    font-size: 140px;
+    margin-left: -65vw;
+    font-weight: bold;
+    text-align: left;
+    color:  #891D1A;
+}
+
+
+.email a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    color: #120d04;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.email a:hover {
+    font-family: "Galada", serif;
+    color: #891D1A;
+}
+
+.contact-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
